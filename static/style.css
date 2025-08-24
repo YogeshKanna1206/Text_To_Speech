@@ -1,0 +1,35 @@
+#dropZone{
+  border: 1px solid #101010;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 100px 100px 100px 100px;
+  margin-top:100px;
+  cursor: pointer;
+  background-color: rgb(67, 66, 66);
+
+
+}
+#title{
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to right, #1e6c72, #98372a);
+  color: white;
+}
+button {
+  background-color : #292828 ;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:45%;
+  margin-top:30px;
+}
+
+

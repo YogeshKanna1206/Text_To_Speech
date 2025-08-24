@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uploaded</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+    body {
+        text-align: center;
+    }
+    a {
+        display: inline-block;
+    }
+    button {
+        width: 200px;
+        padding: 10px;
+        margin-left: -20px;
+        border-radius: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #45a049; /* hover effect */
+    }
+    </style>
+
+</head>
+<body>
+    <h3>PDF uploaded successfully: {{ name }}</h3>
+    <pre>{{ text }}</pre>
+    <h3>Listen to Audio:</h3>
+    <audio controls>
+        <source src="{{ url_for('static', filename='audio/' + audio_file) }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <hr>
+    <a href="{{ url_for('static', filename='audio/' + audio_file) }}" download="{{ audio_file }}">
+        <button>⬇️ Download Audio</button>
+    </a>
+</body>
+</html>

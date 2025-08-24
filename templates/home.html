@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title To Text</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <h1 id="title">Upload Your PDF</h1>
+    <form id="uploadForm" action="/" method="post" enctype="multipart/form-data">
+        <div id="dropZone">
+          <p>Drag & Drop PDF or Click to Upload</p>
+          <input type="file" name="pdf" id="fileInput" accept="application/pdf" hidden>
+        </div>
+        <button type="submit">Upload</button>
+  </form>
+    <p id="fileName"></p>
+    <script src="static/script.js"></script>
+  </body>
+</html>
